@@ -1,0 +1,1372 @@
+{
+	"info": {
+		"_postman_id": "5f790970-97d7-4e46-90dd-fe4fb3dbe6ca",
+		"name": "queicy-news-system-api",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "13963471"
+	},
+	"item": [
+		{
+			"name": "user",
+			"item": [
+				{
+					"name": "auth",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\": \"queicy@gmail.com\",\r\n    \"password\": \"123456\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://DESKTOP-2CC9SOK:3000/api/v1/login",
+							"protocol": "http",
+							"host": [
+								"DESKTOP-2CC9SOK"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"login"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "auth",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"email\": \"queicy@gmail.com\",\r\n    \"password\": \"123456\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://DESKTOP-2CC9SOK:3000/api/v1/login",
+									"protocol": "http",
+									"host": [
+										"DESKTOP-2CC9SOK"
+									],
+									"port": "3000",
+									"path": [
+										"api",
+										"v1",
+										"login"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "content-type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "vary",
+									"value": "origin"
+								},
+								{
+									"key": "access-control-allow-credentials",
+									"value": "true"
+								},
+								{
+									"key": "access-control-expose-headers",
+									"value": "WWW-Authenticate,Server-Authorization"
+								},
+								{
+									"key": "cache-control",
+									"value": "no-cache"
+								},
+								{
+									"key": "set-cookie",
+									"value": "portal_noticias=Fe26.2**0ee8a14ee9f3ba7adedff180616f81e6acfb2f9cc9de049976539f8c564b5d2e*wQc6d_yWuGtXgj9NkNVgDg*00i7SnNKqrR6iMjAGcdyXcDWhdV1f3nopRckt-UTq0yzHb0nP9Q2A8Pok5VPZxXM**64e47b58533a7e095da142507dc81b178e8f3d71ecd21941c78173f497f6af05*LSsetqVNjUz6qDVcs59Imj5Zf9oqx5ZgYwvLS2pCXKo; HttpOnly; SameSite=None; Path=/"
+								},
+								{
+									"key": "content-length",
+									"value": "226"
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 05 Dec 2024 17:14:48 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"error\": false,\n    \"data\": {\n        \"id\": 1,\n        \"name\": \"Queicy\",\n        \"email\": \"queicy@gmail.com\",\n        \"password\": \"$2b$10$9N19hiSHiHa2hWMzg1/q2.L9qoQykklc3rKkHdqcH4L1obBLrd4uG\",\n        \"createdAt\": \"2024-12-05T17:08:20.938Z\",\n        \"updatedAt\": \"2024-12-05T17:08:20.938Z\"\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "update",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\": \"queicy@gmail.com\",\r\n    \"password\": \"123456\",\r\n    \"name\": \"Queicy\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://DESKTOP-2CC9SOK:3000/api/v1/users-update/1",
+							"protocol": "http",
+							"host": [
+								"DESKTOP-2CC9SOK"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"users-update",
+								"1"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "update",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"email\": \"queicy@gmail.com\",\r\n    \"password\": \"123456\",\r\n    \"name\": \"Queicy\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://DESKTOP-2CC9SOK:3000/api/v1/users-update/1",
+									"protocol": "http",
+									"host": [
+										"DESKTOP-2CC9SOK"
+									],
+									"port": "3000",
+									"path": [
+										"api",
+										"v1",
+										"users-update",
+										"1"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "content-type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "vary",
+									"value": "origin"
+								},
+								{
+									"key": "access-control-allow-credentials",
+									"value": "true"
+								},
+								{
+									"key": "access-control-expose-headers",
+									"value": "WWW-Authenticate,Server-Authorization"
+								},
+								{
+									"key": "cache-control",
+									"value": "no-cache"
+								},
+								{
+									"key": "content-length",
+									"value": "35"
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 05 Dec 2024 17:17:44 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"error\": false,\n    \"message\": \"Success\"\n}"
+						}
+					]
+				},
+				{
+					"name": "create",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\": \"queicy@gmail.com\",\r\n    \"password\": \"123456\",\r\n    \"name\": \"Queicy\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://DESKTOP-2CC9SOK:3000/api/v1/users-create",
+							"protocol": "http",
+							"host": [
+								"DESKTOP-2CC9SOK"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"users-create"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "create",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"email\": \"queicy@gmail.com\",\r\n    \"password\": \"123456\",\r\n    \"name\": \"Queicy\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://DESKTOP-2CC9SOK:3000/api/v1/users-create",
+									"protocol": "http",
+									"host": [
+										"DESKTOP-2CC9SOK"
+									],
+									"port": "3000",
+									"path": [
+										"api",
+										"v1",
+										"users-create"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "content-type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "vary",
+									"value": "origin"
+								},
+								{
+									"key": "access-control-allow-credentials",
+									"value": "true"
+								},
+								{
+									"key": "access-control-expose-headers",
+									"value": "WWW-Authenticate,Server-Authorization"
+								},
+								{
+									"key": "cache-control",
+									"value": "no-cache"
+								},
+								{
+									"key": "content-length",
+									"value": "35"
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 05 Dec 2024 17:08:21 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"error\": false,\n    \"message\": \"Success\"\n}"
+						}
+					]
+				},
+				{
+					"name": "logout",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\": \"email@mail.com\",\r\n    \"password\": \"adsfasfdasfd\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://DESKTOP-2CC9SOK:3000/api/v1/logout",
+							"protocol": "http",
+							"host": [
+								"DESKTOP-2CC9SOK"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"logout"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "logout",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"email\": \"email@mail.com\",\r\n    \"password\": \"adsfasfdasfd\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://DESKTOP-2CC9SOK:3000/api/v1/logout",
+									"protocol": "http",
+									"host": [
+										"DESKTOP-2CC9SOK"
+									],
+									"port": "3000",
+									"path": [
+										"api",
+										"v1",
+										"logout"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "content-type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "vary",
+									"value": "origin"
+								},
+								{
+									"key": "access-control-allow-credentials",
+									"value": "true"
+								},
+								{
+									"key": "access-control-expose-headers",
+									"value": "WWW-Authenticate,Server-Authorization"
+								},
+								{
+									"key": "cache-control",
+									"value": "no-cache"
+								},
+								{
+									"key": "set-cookie",
+									"value": "portal_noticias=; Max-Age=0; Expires=Thu, 01 Jan 1970 00:00:00 GMT; HttpOnly; SameSite=None; Path=/"
+								},
+								{
+									"key": "content-length",
+									"value": "37"
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 05 Dec 2024 17:18:30 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"Logged out successfully\"\n}"
+						}
+					]
+				},
+				{
+					"name": "allUsers",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://DESKTOP-2CC9SOK:3000/api/v1/users",
+							"protocol": "http",
+							"host": [
+								"DESKTOP-2CC9SOK"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"users"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "allUsers",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://DESKTOP-2CC9SOK:3000/api/v1/users",
+									"protocol": "http",
+									"host": [
+										"DESKTOP-2CC9SOK"
+									],
+									"port": "3000",
+									"path": [
+										"api",
+										"v1",
+										"users"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "content-type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "vary",
+									"value": "origin"
+								},
+								{
+									"key": "access-control-allow-credentials",
+									"value": "true"
+								},
+								{
+									"key": "access-control-expose-headers",
+									"value": "WWW-Authenticate,Server-Authorization"
+								},
+								{
+									"key": "cache-control",
+									"value": "no-cache"
+								},
+								{
+									"key": "content-length",
+									"value": "248"
+								},
+								{
+									"key": "accept-ranges",
+									"value": "bytes"
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 05 Dec 2024 17:19:18 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"error\": false,\n    \"message\": \"Success\",\n    \"data\": [\n        {\n            \"id\": 1,\n            \"name\": \"Queicy\",\n            \"email\": \"queicy@gmail.com\",\n            \"password\": \"$2b$10$jKyF9nJrh5undlQL5Akeu..7gkTmkxxiZHOoyHTzDMIhu4cjThKFC\",\n            \"createdAt\": \"2024-12-05T17:08:20.938Z\",\n            \"updatedAt\": \"2024-12-05T17:17:44.144Z\"\n        }\n    ]\n}"
+						}
+					]
+				},
+				{
+					"name": "delete",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://DESKTOP-2CC9SOK:3000/api/v1/users-delete/3",
+							"protocol": "http",
+							"host": [
+								"DESKTOP-2CC9SOK"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"users-delete",
+								"3"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "delete",
+							"originalRequest": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "http://DESKTOP-2CC9SOK:3000/api/v1/users-delete/1",
+									"protocol": "http",
+									"host": [
+										"DESKTOP-2CC9SOK"
+									],
+									"port": "3000",
+									"path": [
+										"api",
+										"v1",
+										"users-delete",
+										"1"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "content-type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "vary",
+									"value": "origin"
+								},
+								{
+									"key": "access-control-allow-credentials",
+									"value": "true"
+								},
+								{
+									"key": "access-control-expose-headers",
+									"value": "WWW-Authenticate,Server-Authorization"
+								},
+								{
+									"key": "cache-control",
+									"value": "no-cache"
+								},
+								{
+									"key": "content-length",
+									"value": "35"
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 05 Dec 2024 17:20:17 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"error\": false,\n    \"message\": \"Success\"\n}"
+						}
+					]
+				},
+				{
+					"name": "oneUser",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://DESKTOP-2CC9SOK:3000/api/v1/users/1",
+							"protocol": "http",
+							"host": [
+								"DESKTOP-2CC9SOK"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"users",
+								"1"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "oneUser",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://DESKTOP-2CC9SOK:3000/api/v1/users/1",
+									"protocol": "http",
+									"host": [
+										"DESKTOP-2CC9SOK"
+									],
+									"port": "3000",
+									"path": [
+										"api",
+										"v1",
+										"users",
+										"1"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "content-type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "vary",
+									"value": "origin"
+								},
+								{
+									"key": "access-control-allow-credentials",
+									"value": "true"
+								},
+								{
+									"key": "access-control-expose-headers",
+									"value": "WWW-Authenticate,Server-Authorization"
+								},
+								{
+									"key": "cache-control",
+									"value": "no-cache"
+								},
+								{
+									"key": "content-length",
+									"value": "246"
+								},
+								{
+									"key": "accept-ranges",
+									"value": "bytes"
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 05 Dec 2024 17:19:55 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"error\": false,\n    \"message\": \"Success\",\n    \"user\": {\n        \"id\": 1,\n        \"name\": \"Queicy\",\n        \"email\": \"queicy@gmail.com\",\n        \"password\": \"$2b$10$jKyF9nJrh5undlQL5Akeu..7gkTmkxxiZHOoyHTzDMIhu4cjThKFC\",\n        \"createdAt\": \"2024-12-05T17:08:20.938Z\",\n        \"updatedAt\": \"2024-12-05T17:17:44.144Z\"\n    }\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "news",
+			"item": [
+				{
+					"name": "update",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"title\": \"title test updated\",\r\n    \"sub_title\": \"subtitle updated\",\r\n    \"id_user\": 2,\r\n    \"image\": \"asdfasdfasfdafd\",\r\n    \"text\": \"sdfasdfasdfasdfafd\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://DESKTOP-2CC9SOK:3000/api/v1/news-update/3",
+							"protocol": "http",
+							"host": [
+								"DESKTOP-2CC9SOK"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"news-update",
+								"3"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "update",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"title\": \"title test updated\",\r\n    \"sub_title\": \"subtitle updated\",\r\n    \"id_user\": 2,\r\n    \"image\": \"asdfasdfasfdafd\",\r\n    \"text\": \"sdfasdfasdfasdfafd\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://DESKTOP-2CC9SOK:3000/api/v1/news-update/1",
+									"protocol": "http",
+									"host": [
+										"DESKTOP-2CC9SOK"
+									],
+									"port": "3000",
+									"path": [
+										"api",
+										"v1",
+										"news-update",
+										"1"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "content-type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "vary",
+									"value": "origin"
+								},
+								{
+									"key": "access-control-allow-credentials",
+									"value": "true"
+								},
+								{
+									"key": "access-control-expose-headers",
+									"value": "WWW-Authenticate,Server-Authorization"
+								},
+								{
+									"key": "cache-control",
+									"value": "no-cache"
+								},
+								{
+									"key": "content-length",
+									"value": "35"
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 05 Dec 2024 17:27:06 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"error\": false,\n    \"message\": \"Success\"\n}"
+						}
+					]
+				},
+				{
+					"name": "create",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"title\": \"title\",\r\n    \"sub_title\": \"subtitle\",\r\n    \"id_user\": 3,\r\n    \"image\": \"asdfasdfasfdafd\",\r\n    \"text\": \"sdfasdfasdfasdfafd\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://DESKTOP-2CC9SOK:3000/api/v1/news-create",
+							"protocol": "http",
+							"host": [
+								"DESKTOP-2CC9SOK"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"news-create"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "create",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"title\": \"title\",\r\n    \"sub_title\": \"subtitle\",\r\n    \"id_user\": 2,\r\n    \"image\": \"asdfasdfasfdafd\",\r\n    \"text\": \"sdfasdfasdfasdfafd\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://DESKTOP-2CC9SOK:3000/api/v1/news-create",
+									"protocol": "http",
+									"host": [
+										"DESKTOP-2CC9SOK"
+									],
+									"port": "3000",
+									"path": [
+										"api",
+										"v1",
+										"news-create"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "content-type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "vary",
+									"value": "origin"
+								},
+								{
+									"key": "access-control-allow-credentials",
+									"value": "true"
+								},
+								{
+									"key": "access-control-expose-headers",
+									"value": "WWW-Authenticate,Server-Authorization"
+								},
+								{
+									"key": "cache-control",
+									"value": "no-cache"
+								},
+								{
+									"key": "content-length",
+									"value": "35"
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 05 Dec 2024 17:26:44 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"error\": false,\n    \"message\": \"Success\"\n}"
+						}
+					]
+				},
+				{
+					"name": "findAll",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://DESKTOP-2CC9SOK:3000/api/v1/news",
+							"protocol": "http",
+							"host": [
+								"DESKTOP-2CC9SOK"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"news"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "findAll",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://DESKTOP-2CC9SOK:3000/api/v1/news",
+									"protocol": "http",
+									"host": [
+										"DESKTOP-2CC9SOK"
+									],
+									"port": "3000",
+									"path": [
+										"api",
+										"v1",
+										"news"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "content-type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "vary",
+									"value": "origin"
+								},
+								{
+									"key": "access-control-allow-credentials",
+									"value": "true"
+								},
+								{
+									"key": "access-control-expose-headers",
+									"value": "WWW-Authenticate,Server-Authorization"
+								},
+								{
+									"key": "cache-control",
+									"value": "no-cache"
+								},
+								{
+									"key": "content-length",
+									"value": "236"
+								},
+								{
+									"key": "accept-ranges",
+									"value": "bytes"
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 05 Dec 2024 17:27:25 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"error\": false,\n    \"message\": \"Success\",\n    \"data\": [\n        {\n            \"id\": 2,\n            \"title\": \"title\",\n            \"sub_title\": \"subtitle\",\n            \"id_user\": 2,\n            \"image\": \"asdfasdfasfdafd\",\n            \"text\": \"sdfasdfasdfasdfafd\",\n            \"createdAt\": \"2024-12-05T17:26:43.990Z\",\n            \"updatedAt\": \"2024-12-05T17:26:43.990Z\"\n        }\n    ]\n}"
+						}
+					]
+				},
+				{
+					"name": "delete",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://DESKTOP-2CC9SOK:3000/api/v1/news-delete/5",
+							"protocol": "http",
+							"host": [
+								"DESKTOP-2CC9SOK"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"news-delete",
+								"5"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "delete",
+							"originalRequest": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "http://DESKTOP-2CC9SOK:3000/api/v1/news-delete/2",
+									"protocol": "http",
+									"host": [
+										"DESKTOP-2CC9SOK"
+									],
+									"port": "3000",
+									"path": [
+										"api",
+										"v1",
+										"news-delete",
+										"2"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "content-type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "vary",
+									"value": "origin"
+								},
+								{
+									"key": "access-control-allow-credentials",
+									"value": "true"
+								},
+								{
+									"key": "access-control-expose-headers",
+									"value": "WWW-Authenticate,Server-Authorization"
+								},
+								{
+									"key": "cache-control",
+									"value": "no-cache"
+								},
+								{
+									"key": "content-length",
+									"value": "35"
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 05 Dec 2024 17:29:02 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"error\": false,\n    \"message\": \"Success\"\n}"
+						}
+					]
+				},
+				{
+					"name": "findOne",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://DESKTOP-2CC9SOK:3000/api/v1/news/2",
+							"protocol": "http",
+							"host": [
+								"DESKTOP-2CC9SOK"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"news",
+								"2"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "findOne",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://DESKTOP-2CC9SOK:3000/api/v1/news/2",
+									"protocol": "http",
+									"host": [
+										"DESKTOP-2CC9SOK"
+									],
+									"port": "3000",
+									"path": [
+										"api",
+										"v1",
+										"news",
+										"2"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "content-type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "vary",
+									"value": "origin"
+								},
+								{
+									"key": "access-control-allow-credentials",
+									"value": "true"
+								},
+								{
+									"key": "access-control-expose-headers",
+									"value": "WWW-Authenticate,Server-Authorization"
+								},
+								{
+									"key": "cache-control",
+									"value": "no-cache"
+								},
+								{
+									"key": "content-length",
+									"value": "234"
+								},
+								{
+									"key": "accept-ranges",
+									"value": "bytes"
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 05 Dec 2024 17:28:39 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"error\": false,\n    \"message\": \"Success\",\n    \"data\": {\n        \"id\": 2,\n        \"title\": \"title\",\n        \"sub_title\": \"subtitle\",\n        \"id_user\": 2,\n        \"image\": \"asdfasdfasfdafd\",\n        \"text\": \"sdfasdfasdfasdfafd\",\n        \"createdAt\": \"2024-12-05T17:26:43.990Z\",\n        \"updatedAt\": \"2024-12-05T17:26:43.990Z\"\n    }\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "session",
+			"item": [
+				{
+					"name": "validation",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://DESKTOP-2CC9SOK:3000/api/v1/session/uasdhuashejhrakjiasudfauebasd",
+							"protocol": "http",
+							"host": [
+								"DESKTOP-2CC9SOK"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"session",
+								"uasdhuashejhrakjiasudfauebasd"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "validation",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://DESKTOP-2CC9SOK:3000/api/v1/session/uasdhuashejhrakjiasudfauebasd",
+									"protocol": "http",
+									"host": [
+										"DESKTOP-2CC9SOK"
+									],
+									"port": "3000",
+									"path": [
+										"api",
+										"v1",
+										"session",
+										"uasdhuashejhrakjiasudfauebasd"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "content-type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "vary",
+									"value": "origin"
+								},
+								{
+									"key": "access-control-allow-credentials",
+									"value": "true"
+								},
+								{
+									"key": "access-control-expose-headers",
+									"value": "WWW-Authenticate,Server-Authorization"
+								},
+								{
+									"key": "cache-control",
+									"value": "no-cache"
+								},
+								{
+									"key": "content-length",
+									"value": "246"
+								},
+								{
+									"key": "accept-ranges",
+									"value": "bytes"
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 05 Dec 2024 17:25:32 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"error\": false,\n    \"message\": \"Success\",\n    \"data\": {\n        \"id\": 2,\n        \"name\": \"Queicy\",\n        \"email\": \"queicy@gmail.com\",\n        \"password\": \"$2b$10$fCm3lQnuiUQq4amSAzLihuOCF9EmmIzf6qEKdPgeKjEAhhvWGwNk.\",\n        \"createdAt\": \"2024-12-05T17:25:08.444Z\",\n        \"updatedAt\": \"2024-12-05T17:25:08.444Z\"\n    }\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "ping",
+			"item": [
+				{
+					"name": "ping",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://DESKTOP-2CC9SOK:3000/api/v1",
+							"protocol": "http",
+							"host": [
+								"DESKTOP-2CC9SOK"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "ping",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://DESKTOP-2CC9SOK:3000/api/v1",
+									"protocol": "http",
+									"host": [
+										"DESKTOP-2CC9SOK"
+									],
+									"port": "3000",
+									"path": [
+										"api",
+										"v1"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "content-type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "vary",
+									"value": "origin"
+								},
+								{
+									"key": "access-control-allow-credentials",
+									"value": "true"
+								},
+								{
+									"key": "access-control-expose-headers",
+									"value": "WWW-Authenticate,Server-Authorization"
+								},
+								{
+									"key": "cache-control",
+									"value": "no-cache"
+								},
+								{
+									"key": "content-length",
+									"value": "49"
+								},
+								{
+									"key": "accept-ranges",
+									"value": "bytes"
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 05 Dec 2024 17:25:51 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"error\": false,\n    \"message\": \"Success\",\n    \"data\": \"pong\"\n}"
+						}
+					]
+				}
+			]
+		}
+	]
+}
