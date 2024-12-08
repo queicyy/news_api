@@ -31,6 +31,10 @@ export const newsService = {
   findOne: async (id) => {
     try {
       const response = await News.findOne({
+        include: {
+          model: User,
+          required: true
+        },
         where: {
           id: id
         }

@@ -26,7 +26,7 @@ const init = async () => {
     cookie: {
       name: process.env.COOKIE_NAME,
       password: process.env.COOKIE_PWD,
-      isSecure: false,
+      isSecure: true, // false to dev client (postman, insomnia ...etc) and true to brownser utilization
       isHttpOnly: true,
       path: "/",
       isSameSite: "None"
